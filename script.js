@@ -1,3 +1,8 @@
+
+$('.carousel').carousel({
+  interval: 2000
+})
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
