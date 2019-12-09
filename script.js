@@ -111,6 +111,7 @@ $(tag).addClass("visible")
 }
 })
 
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -190,3 +191,52 @@ window.onclick = function(event) {
     modal3.style.display = "none";
   }
 }
+
+
+function myFunction() {
+  document.getElementById("schedimg").src = "https://cdn.glitch.com/696a54c7-e493-465b-b503-c49262ef99ac%2FCopy%20of%20_DSC9115%20(1).jpg?v=1575871496646";
+}
+function myFunction1() {
+  document.getElementById("schedimg").src = "https://cdn.glitch.com/696a54c7-e493-465b-b503-c49262ef99ac%2FCopy%20of%20superpos1-55.JPG?v=1575871880493";
+}
+function myFunction2() {
+  document.getElementById("schedimg").src = "https://cdn.glitch.com/696a54c7-e493-465b-b503-c49262ef99ac%2FCopy%20of%20_DSC9081%20(3).jpg?v=1575872229640";
+}
+function myFunction3() {
+  document.getElementById("schedimg").src = "https://cdn.glitch.com/696a54c7-e493-465b-b503-c49262ef99ac%2Fsuperpos1-197.JPG?v=1575872540173";
+}
+function myFunction4() {
+  document.getElementById("schedimg").src = "https://cdn.glitch.com/696a54c7-e493-465b-b503-c49262ef99ac%2FCopy%20of%20_DSC8951.jpg?v=1575872620050";
+}
+function myFunction5() {
+  document.getElementById("schedimg").src = "https://cdn.glitch.com/696a54c7-e493-465b-b503-c49262ef99ac%2FCopy%20of%20_DSC9015.jpg?v=1575872726375";
+}
+function myFunction7() {
+  document.getElementById("schedimg").src = "https://cdn.glitch.com/696a54c7-e493-465b-b503-c49262ef99ac%2FCopy%20of%20_DSC9002.jpg?v=1575872727204";
+}
+function myFunction6() {
+  document.getElementById("schedimg").src = "https://cdn.glitch.com/696a54c7-e493-465b-b503-c49262ef99ac%2FCopy%20of%20_DSC9015.jpg?v=1575872726375";
+}
+
+function myFunctionSat() {
+  document.getElementById("schedimg").src = "https://cdn.glitch.com/696a54c7-e493-465b-b503-c49262ef99ac%2FCopy%20of%20_DSC9115%20(1).jpg?v=1575871496646";
+  document.getElementById("e0").innerHTML = "Saturday Schedule";
+  document.getElementById("e1").innerHTML = "10:00 AM Check In";
+  document.getElementById("e2").innerHTML = "10:45 AM Opening Ceremony";
+  document.getElementById("e3").innerHTML = "11:15 AM Form Teams";
+  document.getElementById("e4").innerHTML = "12:00 PM Lunch; hacking begins!";
+  document.getElementById("e5").innerHTML = "06:00 PM Dinner";
+  document.getElementById("e6").innerHTML = "08:00 PM Women In Tech Panel";
+}
+
+function myFunctionSunday() {
+  document.getElementById("schedimg").src = "https://cdn.glitch.com/696a54c7-e493-465b-b503-c49262ef99ac%2FSuperposition-72%20(1).jpg?v=1575887047931";
+  document.getElementById("e0").innerHTML = "Sunday Schedule";
+  document.getElementById("e1").innerHTML = "08:30 AM Attendee Breakfast";
+  document.getElementById("e2").innerHTML = "09:00 Submissions Due";
+  document.getElementById("e3").innerHTML = "09:30 Judging Closes";
+  document.getElementById("e4").innerHTML = "11:00 Closing Ceremony";
+  document.getElementById("e5").innerHTML = "11:30 Superposition Ends";
+  document.getElementById("e6").innerHTML = "";
+}
+

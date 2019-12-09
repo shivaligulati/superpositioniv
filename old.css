@@ -506,12 +506,23 @@ a {
   margin: 1%;
   margin-bottom: 3%;
   color: #8b2455;
-  font-size: 200%;
+  font-size: 400%;
+  font-weight: light;
+  font-family: "playlistscript";
+}
+.schedtitles: hover{
+    font-weight: normal;
 }
 
 .scheddescriptions {
   margin: 1%;
   font-size: 150%;
+  display-inline:block;
+  font-weight:normal;
+}
+.scheddescriptions:hover{
+  font-weight: bold;
+  color: #8b2455;
 }
 
 /* WHAT TO EXPECT */
@@ -1047,6 +1058,12 @@ footer {
 .emphasis{
   color: #8b2455;
 }
+
+
+th, td {
+  padding: 15px;
+}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -1229,3 +1246,58 @@ footer {
   font-weight: normal;
   font-size: 120%;
 }
+
+.rowsched {
+  display: flex;
+}
+
+.columnsched {
+  flex: 50%;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnsched {
+    width: 100%;
+  }
+}
+
+th {
+  text-align: left;
+}
+
+
+
+.rowvid {
+  display: flex;
+  background-color: rgba(255, 194, 211, 0.5);
+  opacity: 1;
+  height: 600px;
+}
+}
+
+.columnvid {
+  flex: 50%;
+}
+
+#videotext {
+  padding: 1.5%;
+}
+
+.rowsun {
+  display: flex;
+}
+
+.columnsun {
+  flex: 50%;
+}
+
+.sat {
+  margin: 7%;
+}
+
+#schedimg{
+  width:100%;
+  height:100%;
+}
+
+
