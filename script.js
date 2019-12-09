@@ -1,3 +1,5 @@
+
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -110,7 +112,6 @@ $(tag).addClass("visible")
 })
 
 
-
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -191,6 +192,7 @@ window.onclick = function(event) {
   }
 }
 
+
 function myFunction() {
   document.getElementById("schedimg").src = "https://cdn.glitch.com/696a54c7-e493-465b-b503-c49262ef99ac%2FCopy%20of%20_DSC9115%20(1).jpg?v=1575871496646";
 }
@@ -237,3 +239,4 @@ function myFunctionSunday() {
   document.getElementById("e5").innerHTML = "11:30 Superposition Ends";
   document.getElementById("e6").innerHTML = "";
 }
+
