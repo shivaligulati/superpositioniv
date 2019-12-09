@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+.container5 {
+  padding: 1%;
+}
 
 body,
 html {
@@ -503,12 +506,23 @@ a {
   margin: 1%;
   margin-bottom: 3%;
   color: #8b2455;
-  font-size: 200%;
+  font-size: 400%;
+  font-weight: light;
+  font-family: "playlistscript";
+}
+.schedtitles: hover{
+    font-weight: normal;
 }
 
 .scheddescriptions {
   margin: 1%;
   font-size: 150%;
+  display-inline:block;
+  font-weight:normal;
+}
+.scheddescriptions:hover{
+  font-weight: bold;
+  color: #8b2455;
 }
 
 /* WHAT TO EXPECT */
@@ -1044,6 +1058,246 @@ footer {
 .emphasis{
   color: #8b2455;
 }
-.container5 {
-  padding: 1%;
+
+
+th, td {
+  padding: 15px;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+/* The Modal (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content2 {
+  background-color: #fefefe;
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+}
+
+/* The Close Button */
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* The Modal (background) */
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content3 {
+  background-color: #fefefe;
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+}
+
+/* The Close Button */
+.close3 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.columnmodal {
+  float: left;
+  padding: 10px;
+}
+
+.leftmodal {
+  width: 60%;
+}
+
+.rightmodal {
+  width: 40%;
+}
+
+/* Clear floats after the columns */
+.rowmodal:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#sizemodal {
+  width:55%;
+  height:auto;
+}
+@media screen and (max-width: 600px) {
+  .columnmodal {
+    width: 100%;
+  }
+}
+
+.modaltitles{
+  font: "Nanum Gothic";
+  font-weight: normal;
+  letter-spacing: 0.04em; 
+  color: #8b2455;
+  font-size: 250%;
+}
+
+.modalsubtitles{
+  font: "Nanum Gothic";
+  font-weight: normal;
+  font-size: 150%;
+}
+
+.modalquotes{
+  font: "Nanum Gothic";
+  font-weight: normal;
+  font-size: 120%;
+}
+
+
+.rowsched {
+  display: flex;
+}
+
+.columnsched {
+  flex: 50%;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnsched {
+    width: 100%;
+  }
+}
+
+th {
+  text-align: left;
+}
+
+
+
+.rowvid {
+  display: flex;
+  background-color: rgba(255, 194, 211, 0.5);
+  opacity: 1;
+  height: 600px;
+}
+}
+
+.columnvid {
+  flex: 50%;
+}
+
+#videotext {
+  padding: 1.5%;
+}
+
+.rowsun {
+  display: flex;
+}
+
+.columnsun {
+  flex: 50%;
+}
+
+.sat {
+  margin: 7%;
+}
+
+#schedimg{
+  width:100%;
+  height:100%;
 }
