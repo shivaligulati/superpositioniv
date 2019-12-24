@@ -503,10 +503,10 @@ a {
 }
 
 .schedtitles {
-  margin: 1%;
+  margin: 3%;
   margin-bottom: 3%;
   color: #8b2455;
-  font-size: 400%;
+  font-size: 450%;
   font-weight: light;
   font-family: "playlistscript";
 }
@@ -515,8 +515,8 @@ a {
 }
 
 .scheddescriptions {
-  margin: 1%;
-  font-size: 150%;
+  margin: 3%;
+  font-size: 170%;
   display-inline:block;
   font-weight:normal;
 }
@@ -1064,6 +1064,7 @@ th, td {
   padding: 15px;
 }
 
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -1247,6 +1248,7 @@ th, td {
   font-size: 120%;
 }
 
+
 .rowsched {
   display: flex;
 }
@@ -1271,7 +1273,7 @@ th {
   display: flex;
   background-color: rgba(255, 194, 211, 0.5);
   opacity: 1;
-  height: 600px;
+  height: 610px;
 }
 }
 
@@ -1280,7 +1282,8 @@ th {
 }
 
 #videotext {
-  padding: 1.5%;
+/*   padding: 1.5%; */
+  margin: 7%;
 }
 
 .rowsun {
@@ -1291,13 +1294,26 @@ th {
   flex: 50%;
 }
 
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnvid {
+    width: 100%;
+  }
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnsun {
+    width: 100%;
+  }
+}
+
 .sat {
   margin: 7%;
 }
 
 #schedimg{
-  width:100%;
-  height:100%;
+  margin-top: -10%;
+  width: 100%;
+  height: auto%;
 }
-
-
