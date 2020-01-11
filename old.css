@@ -1601,12 +1601,12 @@ animation: spin 1.5s linear infinite;
 }
 
 #loader {
-    -webkit-animation: spin 3s linear infinite;
-    animation: spin 3s linear infinite;
+    -webkit-animation: spin 5s linear infinite;
+    animation: spin 5s linear infinite;
 }
  #loader:before {
-    -webkit-animation: spin 3s linear infinite;
-    animation: spin 3s linear infinite;
+    -webkit-animation: spin 5s linear infinite;
+    animation: spin 5s linear infinite;
 } 
 
 #everything {
