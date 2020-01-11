@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .container5 {
   padding: 1%;
@@ -345,7 +346,7 @@ button:hover{
   outline: none;
   font-size: 130%; */
 /*   transition: 0.4s; */
-}
+/* } */
 #hoveryo:hover {
   background-color: #ffc3d4;
 } 
@@ -362,7 +363,7 @@ button:hover{
   font-weight: bold;
   float: right;
   margin-left: 5px; */
-} */
+/* }  */
 
 /* .active:after {
   content: "\2212";
@@ -605,7 +606,7 @@ a {
 }
 .expectsubtitles2 {
     font: "Nanum Gothic";
-
+  font-size: 110%;
 }
 
 #allgirls {
@@ -641,7 +642,7 @@ a {
 
 #introgifs {
   width: 100%;
-  height: auto;
+  height: 100%;
   transition: 0.3s;
   /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
   -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
@@ -649,7 +650,7 @@ a {
 }
 
 #introgifs:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 
@@ -820,7 +821,7 @@ transition: 0.3s;
     width: 100%;
   }
 }
-}
+/* } */
 
 * {box-sizing:border-box}
 
@@ -1285,7 +1286,7 @@ th {
   opacity: 1;
   height: 610px;
 }
-}
+/* } */
 
 .columnvid {
   flex: 50%;
@@ -1375,4 +1376,261 @@ th {
   opacity: 0;
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
+}
+
+
+
+#slider {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+/*   text-align: center; */
+  overflow: hidden;
+}
+
+input {
+  position: absolute;  
+  opacity: 0;
+  margin-top: 95vh;
+  cursor: pointer;
+}
+
+label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: solid 2px white;
+  border-radius: 999px;
+  background-color: transparent;
+  margin: 95vh 6px 0 6px;
+  z-index: 1;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+input:checked + label{
+  background-color: white;
+}
+
+input:focus + label{
+/*   box-shadow: 0 0 0 2px teal, 0 0 18px white; */
+}
+
+.slide {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition-duration: 0.25s;
+  opacity: 1;
+}
+
+input:checked ~ .slide {
+  transform: translateX(100%);
+}
+
+input:checked + label + .slide {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.bg1{
+  background-image: url("https://cdn.glitch.com/031b1ff8-fc8f-44a3-8955-846482730e3c%2Fsuperpos2-203.JPG?v=1574057772275");
+}
+.bg2{
+    background-image: url("https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2FCopy%20of%20_DSC8922%20(1).jpg?v=1578214005391");
+}
+.bg3{
+      background-image: url("https://cdn.glitch.com/031b1ff8-fc8f-44a3-8955-846482730e3c%2Fsuperpos2-59%20(1).JPG?v=1574057773960");
+}
+.bg4{
+      background-image: url("https://cdn.glitch.com/031b1ff8-fc8f-44a3-8955-846482730e3c%2FCopy%20of%20_DSC8971.jpg?v=1574058317996");
+}
+.bg5{
+      background-image: url("https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2FCopy%20of%20_DSC9188%20(1).jpg?v=1578214012345");
+}
+
+
+
+
+
+.about-container {
+  padding: 0 5%;
+}
+
+.about-container h2 {
+/*   color: #808cFB; */
+  font-weight: 600;
+  margin: 1.5em 0;
+  font-size: 2.25em;
+}
+
+.about-container h2 span {
+/*   color: #FD7361; */
+}
+
+.about-container p {
+  color: #000C54;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+.about-container .carousel {
+  padding: 0 2em;
+  height: 50em;
+  width: 100%;
+}
+
+.about-container .carousel .carousel-inner,
+.about-container .carousel .carousel-item {
+  height: 100%;
+}
+
+.about-container .carousel img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-container .carousel li {
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+}
+
+.about-container .col-12 {
+  padding: 0;
+}
+
+
+.about-container {
+    padding: 0 5%;
+
+    h2 {
+        color: $purple;
+        font-weight: 600;
+        margin: 1.5em 0;
+        font-size: 2.25em;
+
+        span {
+            color: $pink;
+        }
+    }
+
+    p {
+        color: $dark-blue;
+        font-weight: 500;
+        font-size: 1.25em;
+    }
+
+    .carousel {
+        padding: 0 2em;
+        height: 50em;
+        width: 100%;
+
+        .carousel-inner,
+        .carousel-item {
+            height: 100%;
+        }
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        li {
+            height: 1em;
+            width: 1em;
+            border-radius: 50%;
+        }
+    }
+
+    .col-12 {
+        padding: 0;
+    }
+}
+
+
+#loader {
+  display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 150px;
+        height: 150px;
+        margin: -75px 0 0 -75px;
+ 
+/*         border: 3px solid #3498db; */
+        z-index: 1500;
+}
+
+-webkit-animation: spin 1.5s linear infinite;
+animation: spin 1.5s linear infinite;
+ 
+/* include this only once */
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+#loader {
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+ #loader:before {
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+} 
+
+#everything {
+  display: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
 }

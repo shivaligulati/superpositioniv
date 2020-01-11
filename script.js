@@ -67,37 +67,37 @@ function animateValue3(id, start, end, duration) {
 
 animateValue3("value3", 0, 3, 6000);
 
-var slideIndex = 0;
-showSlides();
+// var slideIndex = 0;
+// showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
-}
+// function showSlides() {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   slideIndex++;
+//   if (slideIndex > slides.length) {
+//     slideIndex = 1;
+//   }
+//   slides[slideIndex - 1].style.display = "block";
+//   setTimeout(showSlides, 3000); // Change image every 2 seconds
+// }
 
-window.addEventListener(
-  "DOMContentLoaded",
-  function(e) {
-    var stage = document.getElementById("stage");
-    var fadeComplete = function(e) {
-      stage.appendChild(arr[0]);
-    };
-    var arr = stage.getElementsByTagName("a");
-    for (var i = 0; i < arr.length; i++) {
-      arr[i].addEventListener("animationend", fadeComplete, false);
-    }
-  },
-  false
-);
+// window.addEventListener(
+//   "DOMContentLoaded",
+//   function(e) {
+//     var stage = document.getElementById("stage");
+//     var fadeComplete = function(e) {
+//       stage.appendChild(arr[0]);
+//     };
+//     var arr = stage.getElementsByTagName("a");
+//     for (var i = 0; i < arr.length; i++) {
+//       arr[i].addEventListener("animationend", fadeComplete, false);
+//     }
+//   },
+//   false
+// );
 
 $(document).on("scroll", function() {
   var pageTop = $(document).scrollTop();
@@ -274,4 +274,17 @@ function myFunctionSunday() {
   document.getElementById("e4").innerHTML = "11:00 Closing Ceremony";
   document.getElementById("e5").innerHTML = "11:30 Superposition Ends";
   document.getElementById("e6").innerHTML = "";
+}
+
+
+var myVar;
+function myFunction1000() {
+  myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("everything").style.display = "block";
+  document.getElementById("headerwork").style.height = "100vh";
+
 }
