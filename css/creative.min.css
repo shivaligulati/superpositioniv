@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 .container5 {
   padding: 1%;
@@ -471,7 +472,7 @@ a {
 }
 .teamnames {
   font: "Nanum Gothic";
-  font-weight: normal;
+  font-weight: bold;
   margin-top: 5%;
   color: #000;
   
@@ -10536,6 +10537,11 @@ a {
   color: #8b2455;
   background: 0 0 !important;
 }
+
+#home2{
+  display: none;
+}
+
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
@@ -10572,11 +10578,64 @@ header.masthead h1 {
   }
 }
 @media (max-width: 480px) {
+  header.masthead {
+    height: 5rem;
+    min-height: 5rem;
+    padding-top: 5rem - 72px;
+    padding-bottom: 0; 
+  }
   header.masthead h1 {
-    font-size: 6.5rem;
+    font-size: 4rem;
     font-family: "playlistscript";
   }
+  #home{
+    display: none;
+  }
+  #locationsub{
+    display: none;
+  }
+  #home2{
+  display: block;
+    background-color: #f794b8;
+  border: none;
+  color: black;
+  padding: 15px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: -1%;
+/*   margin: 20px 5px; */
+  cursor: pointer;
+  opacity: .9;
+  border-radius: 5px;
+  transform: translate(0, -50%);
+  }
+  #pinkbg {
+    padding: 4%;
+  }
+  .expectitles2, #value {
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .sectionheader{
+    margin-bottom: 10%;
+    font-family: "playlistscript";
+  }
+  #buttonmobile{
+    margin-top: 15%;
+  }
+  .sponsorhead{
+    padding: 7%;
+  }
+  .sponsorssubtitle{
+    padding: 5%;
+  }
 }
+
+
+
+
 #portfolio .container-fluid {
   max-width: 1920px;
 }
@@ -10830,3 +10889,7 @@ header.masthead6 h1 {
   }
 }
 
+
+.teamnames{
+  font-weight: lighter;
+}
