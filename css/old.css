@@ -449,6 +449,25 @@ a {
   }
 }
 
+.column200 {
+  float: left;
+  width: 20%;
+  padding: 1%;
+}
+
+/* Clear floats after the columns */
+.row200:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column200 {
+    width: 100%;
+  }
+}
+
 /* TEAM */
 .circle {
   height: 70%;
@@ -1329,6 +1348,10 @@ th {
 
 .sat {
   margin: 7%;
+}
+
+.ws {
+  margin: 5%;
 }
 
 #schedimg{
