@@ -1,3 +1,6 @@
+#home2{
+  display: none;
+}
 * {
     margin: 0;
     padding: 0;
@@ -112,6 +115,10 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #8b2455;
   letter-spacing: 1px;
   transform: translate(0, 40%);
+}
+
+#tech {
+  margin-top: -1%;
 }
 
 #title {
@@ -445,6 +452,25 @@ a {
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column2 {
+    width: 100%;
+  }
+}
+
+.column200 {
+  float: left;
+  width: 20%;
+  padding: 1%;
+}
+
+/* Clear floats after the columns */
+.row200:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column200 {
     width: 100%;
   }
 }
@@ -951,6 +977,12 @@ transition: 0.3s;
   padding: 2%;
 }
 
+.sponsorhead2 {
+  background-color: rgba(255, 194, 211, 0.5);
+  opacity: 1;
+  padding: 4%;
+  margin-top: -1%;
+}
 
 body {
     display: flex;
@@ -1327,11 +1359,21 @@ th {
   margin: 7%;
 }
 
+.ws {
+  margin: 4%;
+}
+
 #schedimg{
   margin-top: -15%;
   width: 100%;
   height: auto;
 /*   scale: 0.5; */
+}
+
+#wsimg{
+  margin-top: -15%;
+  width: 100%;
+  height: auto;
 }
 
 #aboutpading{
@@ -1683,12 +1725,70 @@ span{
 }
 
 #e7{
-  background-color: #db85a4;
+  background-color: #edb4c9;
   background-opacity: 0.3;
   padding: 1%;
 }
 
 #e8{
+    background-color: #edb4c9;
+    background-opacity: 0.3;
+    padding: 1%;
+}
+
+
+#w1{
+  background-color: #fff;
+/*   padding: 1%;
+  padding-top: -1%;
+  padding-bottom: -1%; */
+}
+
+#w2{
+  background-color: #fff6f9;
+    padding: 1%;
+}
+
+#w3{
+  background-color: #ffebf2;
+    padding: 1%;
+}
+
+#w4{
+  background-color: #f8dde7;
+    padding: 1%;
+}
+
+#w5{
+  background-color: #f4cfdd;
+    padding: 1%;
+}
+
+#w6{
+    background-color: #f4bfd3;
+    padding: 1%;
+}
+
+#w7{
+  background-color: #edb4c9;
+  background-opacity: 0.3;
+  padding: 1%;
+}
+
+#w8{
+    background-color: #e9aac1;
+    background-opacity: 0.3;
+    padding: 1%;
+}
+
+
+#w9 {
+    background-color: #e6a1ba;
+    background-opacity: 0.3;
+    padding: 1%;
+}
+
+#w10 {
     background-color: #cd7e9b;
     background-opacity: 0.3;
     padding: 1%;
@@ -10892,4 +10992,9 @@ header.masthead6 h1 {
 
 .teamnames{
   font-weight: lighter;
+}
+
+#workshops {
+   margin-top: -1%;
+  margin-bottom: -3%;
 }
